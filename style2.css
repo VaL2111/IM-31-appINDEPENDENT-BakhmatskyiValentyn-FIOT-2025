@@ -1,0 +1,262 @@
+.test {
+    background-image: url("./img/cheese.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+
+/* невідвідуване посилання */
+a:link {
+    color: red;
+}
+
+/* відвідуване посилання */
+a:visited {
+    color: green;
+}
+
+/* посилання при наведенні миші */
+a:hover {
+    color: hotpink;
+}
+
+/* активне посилання */
+a:active {
+    color: blue;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color: #f5f5f5;}
+
+div.anime {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: myAnimation;
+    animation-duration: 4s;
+    box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+}
+
+@keyframes myAnimation {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    cursor: pointer;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 110%;
+}
+
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {border: 2px solid #04AA6D;}
+.button2 {border: 2px solid #008CBA;}
+.button3 {border: 2px solid #f44336;}
+.button4 {border: 2px solid #e7e7e7;}
+.button5 {border: 2px solid #555555;}
+
+.button1:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.button3:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.button4:hover {background-color: #e7e7e7;}
+
+.button5:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination li a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    border: 1px solid gray;
+    color: black;
+    margin: 0 4px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.pagination li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination li a:hover:not(.active) {
+    background-color: lightgray;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+div.trans {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+}
+
+#div1 {transition-timing-function: linear;}
+#div2 {transition-timing-function: ease;}
+#div3 {transition-timing-function: ease-in;}
+#div4 {transition-timing-function: ease-out;}
+#div5 {transition-timing-function: ease-in-out;}
+
+div.trans:hover {
+    width: 300px;
+}
+
+p.test1 {
+    width: 200px;
+    border: 1px solid #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+p.test2 {
+    width: 200px;
+    border: 1px solid #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

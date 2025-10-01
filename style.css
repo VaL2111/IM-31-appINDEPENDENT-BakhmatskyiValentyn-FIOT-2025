@@ -1,0 +1,22 @@
+.independent-works {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.btn {
+    background: #001c7d;
+    color: white;
+    padding: 20px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #f8c51e;
+    color: #001c7d;
+}
